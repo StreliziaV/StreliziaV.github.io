@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Realized Application</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!--live2d animation-->
+		<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  		<script>
+    		L2Dwidget.init({
+      		"model": { "jsonPath":"https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+      		"display": { "position": "right", "width": 100, "height": 100, "hOffset": 0, "vOffset": 0 },
+      		"mobile": { "show": true, "scale": 0.5 },
+      		"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
+    		});
+  		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Computer Vision</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Conceputal Introduction</a></li>
+							<li class="active"><a href="nowaday.html">Nowaday Application</a></li>
+							<li><a href="future.html">Fancy Future</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--Content-->
+									<span class="date">November, 2021</span>
+									<h2>CONTENT</h2>
+									<div class="row">				
+										<div class="col-6 col-12-small">
+											<ul>
+												<li><a href="#Overview">Overview on CV Application</a></li>
+												<li><a href="#Industry">Application on Automation Industry</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul>
+												<li><a href="#Drive">Automatic Driving</a></li>
+												<li><a href="#Military">Computer Vision for Military Usage</a></li>
+											</ul>
+										</div>
+									</div>
+									<p></p>
+									<audio controls="controls" autoplay="autoplay" loop id = "bgm">
+										<source src="images/bgm_2.mp3" type="audio/mpeg" >
+										Your browser does not support the audio element.
+									</audio>
+									<p></p>
+									<span class="date">
+										BGM: Windy Hill<br />
+										by 羽肿
+									</span>
+									<!--header-->
+									<h2 id="Overview"><a><br>
+										OVERVIEW
+									</a></h2>
+									<p>
+										With Computer Vision, people nowadays can apply more and more precise and complicated operations<br />
+										on different images such as Object Detection, Object Segmentation, Image Reconstruction, and Image Synthesis. <br />
+										Also, CV system can be part of a larger system to accomplish various tasks, like the Face Recognization system, Motion Capture system, 
+										Automatic Driving Vehicles and Medical Image Analysis.
+									</p>
+									<div class="row">				
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>Image Reconstruction</li>
+												<div class="col-4"><span class="image fit"><img src="images/reconstruction.jpg" alt="" /></span></div>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>Object Detection</li>
+												<div class="col-4"><span class="image fit"><img src="images/object_detection.jpg" alt="" /></span></div>
+											</ul>
+										</div>
+									</div>
+									<div class="row">				
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>Automatic Driving</li>
+												<div class="col-4"><span class="image fit"><img src="images/auto.gif" alt="" /></span></div>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul>
+												<li>Motion Capture system</li>
+												<div class="col-4"><span class="image fit"><img src="images/motion_cap.gif" alt="" /></span></div>
+											</ul>
+										</div>
+									</div>
+									<p>
+										The following parts will demonstrcte some example of these applications, <br />
+										<a href="https://paperswithcode.com/area/computer-vision">you can also click here for more CV applications-></a>
+									</p>
+									<ul class="actions special">
+										<li><a href="#" class="button large">Back to Top</a></li>
+									</ul>
+								</header>
+								<hr />
+						<!--Content Start-->
+								<h2 id="Industry">Automation Industry</h2>
+								<p><span class="image left"><img src="images/industry_1.jpg" alt="" /></span>
+									From the point of view of industrial vision system, it mainly includes two aspects. <br />
+									One is the inspection system of industrial vision. The use of vision technology to analyze the image of the measured product is conducive to improving the detection level.  
+									Now, visual inspection and image processing system are significant for product quality inspection, with high efficiency and precision, to control and improve the quality of product.
+									In an visial inspection system, resolution is very critical, so the system has higher requirements for image resolution. In the grayscale change, the main indicator is the light source, and the focus of detection is to control the camera's sensitivity and dynamic range. In the spatial change, the resolution of the image is guaranteed by the related theorem. In the light source vision system, the actual situation of the image processing will have an impact on the system operation effect, so a higher intensity signal should be used to obtain various information of the measured object, such as position, size, shape, etc.
+								</p>
+								<p><span class="image right"><img src="images/industry_2.jpg" alt="" /></span>
+									The second is the industrial robot system. This is an application where computer vision system become part of the manufacturing system. 
+									With the help of real time image analysis system, an automated systems or an intelligent industry robots can be able to adapt to changing environment and make autonomous decisions.
+									Then Robots can replace humans in various occasions to complete heavy and monotonous work with higher efficiency. Further more, they are now able to deal with more precise operations than humans can do.
+								</p>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to Top</a></li>
+								</ul>
+								<hr />
+
+								<h2 id="Drive">Automatic Driving</h2>
+								<p><span class="image left"><img src="images/auto_drive.gif" alt="" /></span>
+									The field of computer vision plays a vital role in the field of self-driving cars, because it enables self-driving cars to perceive and understand their surroundings in order to operate correctly.
+									<br />
+									One of the most exciting challenges in computer vision is object detection in images and videos. This involves the ability to locate different numbers of objects and classify them in order to distinguish whether the objects are traffic lights, cars or people. This technology is combined with the analysis of data from other sources (such as sensors and/or radar) to enable the car to "see". 
+								</p>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to Top</a></li>
+								</ul>
+								<hr />
+
+								<h2 id="Military">CV for Military Usage</h2>
+								<p><span class="image right"><img src="images/mili_1.jpg" alt="" /></span>
+									Military applications are probably one of the largest areas for computer vision. The obvious examples are detection of enemy soldiers or vehicles and missile guidance. More advanced systems for missile guidance send the missile to an area rather than a specific target, and target selection is made when the missile reaches the area based on locally acquired image data.
+								</p>
+								<p><span class="image left"><img src="images/mili_2.gif" alt="" /></span>
+									Military applications are probably one of the largest areas for computer vision. The obvious examples are detection of enemy soldiers or vehicles and missile guidance. More advanced systems for missile guidance send the missile to an area rather than a specific target, and target selection is made when the missile reaches the area based on locally acquired image data.
+								</p>
+								<p><span class="image right"><img src="images/mili_3.jpg" alt="" /></span>
+									Military applications are probably one of the largest areas for computer vision. The obvious examples are detection of enemy soldiers or vehicles and missile guidance. More advanced systems for missile guidance send the missile to an area rather than a specific target, and target selection is made when the missile reaches the area based on locally acquired image data.
+								</p>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to Top</a></li>
+								</ul>
+								<div class="box">
+									<article>
+										<a href="https://paperswithcode.com/area/computer-vision">Click here for more CV applications-></a>
+									</article>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h2>Contact us:</h2>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>18786747856</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p>119010369@link.cuhk.edu.cn<br />
+								or<br />
+								119010211@link.cuhk.edu.cn</p>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script src="assets/js/click_effect.js"></script>
+	</body>
+</html>
