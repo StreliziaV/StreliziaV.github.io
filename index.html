@@ -1,22 +1,34 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
 		<title>Midterm project check point</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
+		<!--live2d animation-->
+		<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  		<script>
+    		L2Dwidget.init({
+      		"model": { "jsonPath":"https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json", "scale": 1, "hHeadPos":0.5, "vHeadPos":0.618 },
+      		"display": { "position": "right", "width": 100, "height": 100, "hOffset": 0, "vOffset": 0 },
+      		"mobile": { "show": true, "scale": 0.5 },
+      		"react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
+    		});
+  		</script>
+
+	</head>
+
+	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Computer<br />
-						Vision</h1>
+						<h1>COMPUTER<br />
+						VISION</h1>
 						<p>From now on, <br />
 						the computers learn to see</p>
 						<ul class="actions">
@@ -33,26 +45,52 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Conceputal Introduction</a></li>
-							<li><a href="generic.html">Nowaday Applications</a></li>
-							<li><a href="elements.html">Fancy Future</a></li>
-							<li><a href="deficiency.html">Technical Deficiency</a></li>
+							<li><a href="nowaday.html">Nowaday Applications</a></li>
+							<li><a href="future.html">Fancy Future</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">October, 2021</span>
-									<h2><a href="#">What can <br />
+									<!--Content-->
+									<span class="date">November, 2021</span>
+									<h2>CONTENT</h2>
+									<div class="row">				
+										<div class="col-6 col-12-small">
+											<ul>
+												<li><a href="#Function">Function of Computer Vision</a></li>
+												<li><a href="#Motivations">Motivations and Histories</a></li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul>
+												<li><a href="#Tech">Technical Details</a></li>
+												<li><a href="#my_video">Video Demo</a></li>
+											</ul>
+										</div>
+									</div>
+									<p></p>
+									<audio controls="controls" autoplay="autoplay" loop id = "bgm">
+										<source src="images/bgm_1.mp3" type="audio/mpeg" >
+										Your browser does not support the audio element.
+									</audio>
+									<p></p>
+									<span class="date">
+										BGM: 花火が瞬く夜に<br />
+										by 羽肿
+									</span>
+									<!--header-->
+									<h2 id="Function"><a><br>
+									What can <br />
 									Computer Vision do ?</a></h2>
 									<p>Computer vision is a field of artificial intelligence (AI) that enables computers and<br />
 									systems to derive meaningful information from digital images, videos and other visual inputs<br />
 									If AI enables computers to think, computer vision enables them to see, observe and understand.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/gif_01.gif" alt="" /></a>
+								<a class="image main"><img src="images/gif_01.gif" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="#" class="button large">Back to Top</a></li>
 								</ul>
@@ -61,22 +99,22 @@
 						<!-- Posts -->
 							<article class="post featured">
 								<header class="major">
-									<h2>Motivations<br />
-									and<br />
+									<h2 id="Motivations">Motivations<br />
+									And<br />
 									Histories</h2>
 								</header>
 							</article>
-
 							<section class="posts">
 								<article>
 									<header>
 										<span class="date">1959</span>
-										<h2>Visual experiment<br />
-										on cats</a></h2>
+										<h2><a>Visual Experiment<br />
+										on Cats</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_1.jpg" alt="" /></a>
+									<a href="https://www.sohu.com/a/302537186_114877" class="image fit"><img src="images/his_1.jpg" alt="" /></a>
 									<p>Two neurophysiologists showed a cat an array of images, attempting to correlate a response in its brain.</p>
 									<p>They discovered that it responded first to hard edges or lines, and scientifically, this meant that image processing starts with simple shapes like straight edges.</p>
+									<p>(click on the image for more information)</p>
 								</article>
 								<article>
 									<header>
@@ -84,7 +122,7 @@
 										<h2><a href="#">Lawrence<br />
 										Roberts</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_2.jpg" alt="" /></a>
+									<a href="http://cs231n.stanford.edu/" class="image fit"><img src="images/his_2.jpg" alt="" /></a>
 									<p>The publishment of Machine Perception of Three-Dimensional Solids pioneered computer vision research for the purpose of understanding three-dimensional scenes</p>
 									<p>After that, people began to conduct in-depth research on the world of building blocks, from edge detection, corner feature extraction, to line, plane, curve 
 									and other geometric element analysis, to image shading, texture, motion, and imaging geometry, etc., and established various Data structure and inference rules. </p>
@@ -93,20 +131,20 @@
 								<article>
 									<header>
 										<span class="date">1970s</span>
-										<h2><a href="#">courses and clear<br />
-										theoretical systems appeared</a></h2>
+										<h2><a>Courses and Clear<br />
+										Theoretical Systems Appeared</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_3.jpg" alt="" /></a>
+									<a href="https://www.sohu.com/a/84165588_297710" class="image fit"><img src="images/his_3.jpg" alt="" /></a>
 									<p>David Marr put forward the theory of computer vision (Computational Vision) in the AI laboratory of MIT, which is a completely different theory from the analysis method of the building block world led by Lawrence Roberts.</p>
 									<p>Computer vision theory became an important theoretical framework for computer vision in the 1980s, giving computer vision a clear system and promoting the development of computer vision. </p>
 								</article>
 								<article>
 									<header>
 										<span class="date">1980s</span>
-										<h2><a href="#">theory moves from<br />
-										laboratory to application </a></h2>
+										<h2><a>Theory Moves from<br />
+										Laboratory to Application </a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_4.jpg" alt="" /></a>
+									<a href="https://baike.baidu.com/item/D.Marr%E8%AE%A1%E7%AE%97%E8%A7%86%E8%A7%89%E7%90%86%E8%AE%BA/9604790" class="image fit"><img src="images/his_4.jpg" alt="" /></a>
 									<p>The publication of the book "Vision" (Marr, 1982) marked that computer vision has become an independent subject. </p>
 									<p>1982 DataMan, a vision system produced by Japan's COGEX company, is the world's first industrial optical character recognition (OCR) system. </p>
 								</article>
@@ -115,43 +153,168 @@
 								<article>
 									<header>
 										<span class="date">2005</span>
-										<h2><a href="#">Image feature<br />
-										engineering appeared</a></h2>
+										<h2><a>Image Feature<br />
+										Engineering Appeared</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_5.jpg" alt="" /></a>
+									<a href="http://www.360doc.com/content/14/0722/16/10724725_396297961.shtml" class="image fit"><img src="images/his_5.jpg" alt="" /></a>
 									<p>Dalal & Triggs proposed histogram of orientation gradients, and HOG (Histogram of Oriented Gradients) was applied to pedestrian detection.</p>
 									<p>It is a very commonly used feature method to describe the local texture of an image in the field of computer vision and pattern recognition. </p>
 								</article>
 								<article>
 									<header>
 										<span class="date">2010 to now</span>
-										<h2><a href="#">Deep Learning<br />
+										<h2><a>Deep Learning<br />
 										on Computer Vision</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/his_6.jpg" alt="" /></a>
+									<a href="http://cs231n.stanford.edu/" class="image fit"><img src="images/his_6.jpg" alt="" /></a>
 									<p>Research has gone from two-dimensional images to three-dimensional to video to real space detection.</p>
 									<p>The operation method has changed from constructing three-dimensional to feature recognition, and the algorithm has changed from shallow neural network to deep learning.</p>
 								</article>
 							</section>
+							<section>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to Top</a></li>
+								</ul>
+							</section>
+						
+						<!--Tech Details-->
+							<article class="post featured">
+								<header class="major">
+									<h2 id="Tech"><a>How<br />
+									Computer Vision<br />
+									Works</a></h2>
+								</header>
+								<article>
+									<p>
+										Computer vision needs lots of data which comes from image processing and feature extraction.
+									</p>
+									<p>
+										Then it runs analysis of those data over and over until it discerns 
+										distinctions and ultimately recognize images. For example, to train a computer to recognize 
+										bicycle, it needs to be fed vast quantities of bicycle images and other related items like 
+										motorcycle to learn the differences and recognize a bicycle.
+									</p>
+									<p>
+										These processes involves many math and statistical method. 
+										There are PCA and LDA for feature extraction processs. Also, deep learning and convolutional neural network (CNN)
+										play an important role in image recognization and classification.
+									</p>
+									<p>
+										The following sections show a demo of the image recognization process.
+									</p>
+								</article>
+							</article>
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Step 1</span>
+										<h2><a>Digital Image<br />
+										Acquisition</a></h2>
+									</header>
+									<a class="image fit"><img src="images/RGB.JPG" alt="" /></a>
+									<p>
+										First, various photosensitive cameras, including
+										remote sensing equipment, X-ray tomography, radar, etc, are needed to capture a digital image
+									</p>
+									<p>
+										The digital image can be represented in different format, 
+										such as RGB, YUV, or CMY for the convenience of the following operations. 
+										It can also be reprented by various physical data, such as the depth, absorbance or reflectance of sound waves, 
+										electromagnetic waves or nuclear magnetic resonance.
+									</p>
+								</article>
+								<article>
+									<header>
+										<span class="date">Step 2</span>
+										<h2><a>Digital Image<br />
+										Pre-Process</a></h2>
+									</header>
+									<a class="image fit"><img src="images/process.jpg" alt="" /></a>
+									<p>
+										Before implementing the feature extraction, one or some preprocessing is often used to  
+										aid computational feasibility of subsequent processes. 
+									</p>
+									<p>
+										These process may include Contrast Enhancement, Histogram Equalisation, Noise Reduction, 
+										or Edge Extraction. It depends on the specific demand of different computer vision system.
+									</p>
+									<p><a href="https://www.sciencedirect.com/topics/computer-science/image-processing">
+										Click here for more information on image process->
+									</a></p>
+								</article>
 
+								<article>
+									<header>
+										<span class="date">Step 3</span>
+										<h2><a>Feature<br />
+										Extraction</a></h2>
+									</header>
+									<a class="image fit"><img src="images/PCA.jpg" alt="" /></a>
+									<p>
+										After getting the row data, features such as the structural information, luminance, chrominance 
+										will be extracted by applying analysis methods.
+									</p>
+									<p>
+										Principle Component Analysis (PCA) can be used to reduce the dimension of the row data,
+										and extract the most significant features among a digital image. In addition, Local Binary Patterns
+										 (LBP) and Linear Discrimination Analysis (LDA) are also efficient method to do the feature extraction.
+										while PCA and LBP don't use any class information, LDA is a satisfactory method for classification. 
+									</p>
+									<p><a href="https://blog.csdn.net/whuhan2013/article/details/53995718">
+										Click here for more information on feature extraction->
+									</a></p>
+								</article>
+								<article>
+									<header>
+										<span class="date">Step 4</span>
+										<h2><a href="#">Classification<br />
+										and<br />
+										Recognization</a></h2>
+									</header>
+									<a class="image fit"><img src="images/class.jpg" alt="" /></a>
+									<p>
+										This is the step to make decision and is the most complicated part among the whole process.
+										Based on the feature vectors extracted before, the system will ultimately do the classification 
+										and recognization on the input data, and transform the result to the upper system.
+									</p>
+									<p>
+										Common methods to accomplish this task include Linear Decision Function within feature space, 
+										Minimum-Distance Classifiers, and Template Matching, etc.
+									</p>
+									<p>
+										However, there are several shortcomings of the common methods such as the time cost and accuracy.
+										Nowadays, Deep Learning and Neural Networks methods are essential for this work, which enable the 
+										computer to recognize a image with neural system similar to human being.
+									</p>
+								</article>
+							</section>
 							<section>
 								<ul class="actions special">
 									<li><a href="#" class="button large">Back to Top</a></li>
 								</ul>
 							</section>
 
-							<article class="post featured">
-								<header class="major">
-									<h2>How<br />
-									Computer Vision<br />
-									Works</h2>
-									<p>To<br />
-									Be<br />
-									Continued<br />
-									such as Image recognization, Deep learning, and so on</p>
-								</header>
-							</article>
-
+							<!--Video-->
+								<article class="post featured">
+									<header class="major">
+										<h2 id="my_video">Video for Demo</h2>
+									</header>
+									<article>
+										Below is a video that shows the process of computer vision, <br />
+										and give a bief introduction on the neural network method.
+									</article>
+									<a class="image main"><video src="images/m_1.mp4" width = "800" height="450" controls autoplay>
+										蚌埠住了
+									</video></a>
+									<article><a href="https://www.youtube.com/watch?v=OcycT1Jwsns">
+										Click here to go to the original source of the video->
+									</a></article></p>
+								</article>
+								<section>
+									<ul class="actions special">
+										<li><a href="#" class="button large">Back to Top</a></li>
+									</ul>
+								</section>
 					</div>
 
 				<!-- Footer -->
@@ -162,11 +325,11 @@
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">18786747856</a></p>
+								<p>18786747856</p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">119010369@link.cuhk.edu.cn</a><br />
+								<p>119010369@link.cuhk.edu.cn<br />
 								or<br />
 								119010211@link.cuhk.edu.cn</p>
 							</section>
@@ -183,5 +346,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script src="assets/js/click_effect.js"></script>
 	</body>
 </html>
